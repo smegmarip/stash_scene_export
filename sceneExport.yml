@@ -1,0 +1,14 @@
+name: SceneExport
+description: Export Scene Data to JSON
+url: https://github.com/smegmarip/stash_scene_export.git
+version: 0.0.1
+exec:
+  - python
+  - "{pluginDir}/sceneExport_functions.py"
+interface: raw
+tasks:
+  - name: Export Common
+    description: Export common scene data
+    defaultArgs:
+      name: exportAll
+      mode: exportAll
